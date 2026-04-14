@@ -408,12 +408,12 @@ with tab1:
             line=dict(color=RED, width=2.2, dash="dash"),
             marker=dict(symbol="diamond", size=6, color=RED)))
         step = max(1, HORIZON // 10)
-        fig_bars.update_layout(**PLOT_BG, height=320, barmode="overlay",
-            title="Model Comparison",
-            xaxis=dict(tickvals=x_idx[::step], ticktext=day_labels[::step],
-                       **PLOT_BG["xaxis"]),
-            yaxis_title="Rainfall (mm)")
-        st.plotly_chart(fig_bars, use_container_width=True)
+       # fig_bars.update_layout(**PLOT_BG, height=320, barmode="overlay",
+        #    title="Model Comparison",
+         #   xaxis=dict(tickvals=x_idx[::step], ticktext=day_labels[::step],
+          #             **PLOT_BG["xaxis"]),
+           # yaxis_title="Rainfall (mm)")
+        #st.plotly_chart(fig_bars, use_container_width=True)
 
     with col_b:
         if HORIZON == 7:
